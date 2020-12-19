@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Sample Database
+        </title>
+    </head>
+    <script>
+        
+        var l = window.localStorage
+        var key = document.getElementById("key1").value;
+        var val = document.getElementById("val1").value;
+        function set()
+            {
+                l.setItem("ck",document.getElementById("key1").value)
+                l.setItem("ck2",document.getElementById("val1").value)
+            }
+        function ret()
+            {
+                document.getElementById("p1").innerHTML=l.getItem("ck");
+                document.getElementById("p2").innerHTML=l.getItem("ck2");
+            }   
+        
+    </script>
+    <body>
+        <input id="key1" placeholder="Enter the Username" type="text">
+        <input id="val1" placeholder="Enter the Password" type="text">
+        <br><br>
+        <button onclick="set()">Store DB</button>
+        <br><br>
+        <button onclick="ret()">Retrive DB</button>
+        <p id="p1"></p>
+        <p id="p2"></p>
+    </body>
+</html>

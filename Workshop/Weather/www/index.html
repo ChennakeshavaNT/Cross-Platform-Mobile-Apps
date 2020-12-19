@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Weather App
+        </title>
+    </head>
+    
+    <script>
+        function abc()
+        {
+            var x = document.getElementById("t1").value;
+            window.location.href="https://api.openweathermap.org/data/2.5/weather?q="+x+"&mode=html&appid=91b2c5309022f50b0cf986f5e58aa2e3"
+        }
+    </script>
+    
+    <body>
+        <center>
+            <input type="text" id="t1" placeholder="Enter The City">
+            <br><br>
+            <button onclick="abc()">Get Weather</button>
+        </center>
+    </body>
+
+</html>
