@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            Curency Convertor
+        </title>
+    </head>
+    <script>
+        function ck()
+        {
+         var x=document.getElementById("id1").value;
+         var y=document.getElementById("id3").value;
+        if(y=="d")
+            {
+                document.getElementById("id2").value=x*71;
+            }
+        if(y=="e")
+            {
+                document.getElementById("id2").value=x*77.37;
+            }
+        if(y=="y")
+            {
+                document.getElementById("id2").value=x*0.6219;
+            }
+        if(y=="p")
+            {
+                document.getElementById("id2").value=x*91.13;
+            }
+        if(y=="r")
+            {
+                document.getElementById("id2").value=x*0.39;
+            }
+        }
+    </script>
+    <body style="background-image: url(images.jpeg);background-size: 100%100%">
+        <center>
+            <img src="logo.png">
+            <br><br>
+            <font style="background-color: burlywood">
+                Enter Your Value to convert:
+            </font>
+            <input id="id1" type="number">
+            <br>
+            <br>
+            <font style="background-color: burlywood">Select the Currency to Convert:</font>
+            <select onclick="ck()" id="id3">
+                <option></option>
+                <option value="d">US Dollar</option>
+                <option value="e">Europe Euro</option>
+                <option value="y">japanese YEN</option>
+                <option value="p">Sterling Pound</option>
+                <option value="r">Sri Lankan rupee</option>
+            </select>
+            <br>
+            <br>
+            <font style="background-color: burlywood">Currency Value in INR:</font>
+            <input disabled id="id2" type="number">
+            <br>
+            <br> 
+        </center>
+    </body>
+</html>

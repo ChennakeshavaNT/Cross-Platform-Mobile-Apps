@@ -1,0 +1,16 @@
+#header
+{
+    width: auto;
+    height: 50px;
+    background-color: aqua;
+    color: red;
+    align-content: center;
+}
+#footer
+{
+    width: auto;
+    height: 50px;
+    background-color: aqua;
+    color: red;
+    align-content: center;
+}
