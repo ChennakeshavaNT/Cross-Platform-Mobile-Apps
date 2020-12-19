@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>MY CALCULATOR</title>	
+	</head>
+	<script>
+            function add()
+            {
+             var x=parseInt(document.getElementById("t1").value);
+             var y=parseInt(document.getElementById("t2").value);
+             var z=x+y;
+            document.getElementById("p1").value=z;
+            }
+            function sub()
+            {
+             var x=parseInt(document.getElementById("t1").value);
+             var y=parseInt(document.getElementById("t2").value);
+             var z=x-y;
+            document.getElementById("p1").value=z;
+            }
+        function mul()
+            {
+             var x=parseInt(document.getElementById("t1").value);
+             var y=parseInt(document.getElementById("t2").value);
+             var z=x*y;
+            document.getElementById("p1").value=z;
+            }
+        function div()
+            {
+             var x=parseInt(document.getElementById("t1").value);
+             var y=parseInt(document.getElementById("t2").value);
+             var z=x/y;
+            document.getElementById("p1").value=z;
+            }
+     
+    </script>
+	<body style="background-color: #4E936C" >
+        <div style="background-color: burlywood;height: 50;width: 100%;float: left">
+            <img src="logo.png" style="height: 50">
+            <div style="background-color: burlywood;height: 50; float: right;text-align: left"><center>
+                <font style="font-family: cursive;float:top ;font-size:40">*!!Calculator PRO!!*</font></center>
+        </div> 
+        </div> 
+        <br>
+		<center>
+			<label style="color: white;text-decoration-style: solid;font-size:20">Enter the first No:</label><br><input id="t1" type="number"><br><br><br>
+			<label style="color:white;font-size: 20">Enter the Second No:</label><br><input id="t2" type="number"><br><br><br>
+			<button onclick="add()">Add</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button onclick="sub()" style="">Sub</button><br><br><br>
+			<button onclick="mul()">Mul</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<button onclick="div()">Div</button><br><br><br>
+            <input disabled placeholder="your answer is here" id= "p1" type="text">
+        </center>
+        <br><br><br><br>
+        <div style="background-color:burlywood;height: 250;text-decoration: none"><center><b>
+            <p style="color: black"><b>Coded it</b><br><br>Not downloaded</p></b></center>
+        </div>
+        <br>
+	</body>
+</html>
